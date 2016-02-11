@@ -11,6 +11,7 @@ public class GameField {
     private static Texture fieldTexture;
     private static Texture aimTexture;
     private static Texture cellsTexture;
+    private static Texture bloomTexture;
 
     //private GameField plField;
 
@@ -40,6 +41,7 @@ public class GameField {
         fieldTexture = new Texture("FullWater.png");
         aimTexture = new Texture("pointer.tga");
         cellsTexture = new Texture("Cells.png");
+        bloomTexture = new Texture("bloomer.png");
     }
 
     public void render(SpriteBatch batch, Player pl) {
@@ -55,7 +57,7 @@ public class GameField {
                     if (field[i][j] == 'X')
                         batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 30, 0, 30, 30);
                     if (field[i][j] == 'o')
-                        batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 60, 0, 30, 30);
+                        batch.draw(bloomTexture, x + j * CELL_SIZE, y + i * CELL_SIZE);
                 }
             }
         }else if(pl.getFieldType() == "comp"){
@@ -67,7 +69,7 @@ public class GameField {
                     if (field[i][j] == 'X')
                         batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 30, 0, 30, 30);
                     if (field[i][j] == 'o')
-                        batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 60, 0, 30, 30);
+                        batch.draw(bloomTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, -2, -1, 27, 27);
                 }
             }
         }

@@ -9,12 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="29.794968"
-   height="30.175577"
+   width="31.1602"
+   height="31.677418"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="bloomer.svg">
+   sodipodi:docname="bloomer.svg"
+   inkscape:export-filename="/home/tanya/gb/Sea-Battle/core/assets/bloomer.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.00392157"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="1111.0958"
-     inkscape:cy="-420.07093"
+     inkscape:zoom="13.668984"
+     inkscape:cx="8.0253965"
+     inkscape:cy="19.413387"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -36,11 +39,12 @@
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:snap-bbox="true"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     units="px" />
+     fit-margin-top="1.4"
+     fit-margin-left="2.2"
+     fit-margin-right="1"
+     fit-margin-bottom="2.2"
+     units="px"
+     inkscape:showpageshadow="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -49,6 +53,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,10 +61,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-5.6609069,-82.115694)">
+     transform="translate(-3.4853645,-80.238084)">
     <g
        id="g3815"
-       transform="matrix(0.28607417,0,0,0.30747519,-76.870296,10.12057)">
+       transform="matrix(0.2496972,0,0,0.26523197,-66.375501,21.556906)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="/home/tanya/gb/Sea-Battle/core/assets/bloomer.png">
       <path
          transform="matrix(1.0282137,0,0,1.0299771,273.00309,214.57351)"
          d="m 114.28572,66.647896 c 0,25.247303 -21.746173,45.714284 -48.571433,45.714284 -26.82526,0 -48.57143,-20.466981 -48.57143,-45.714284 0,-25.247304 21.74617,-45.714287 48.57143,-45.714287 26.82526,0 48.571433,20.466983 48.571433,45.714287 z"
