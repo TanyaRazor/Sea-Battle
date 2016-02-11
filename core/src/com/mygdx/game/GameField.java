@@ -64,8 +64,8 @@ public class GameField {
 
             for (int i = 0; i < FIELD_SIZE; i++) {
                 for (int j = 0; j < FIELD_SIZE; j++) {
-                    if (field[i][j] == '*')
-                        batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 0, 0, 30, 30);
+                    //if (field[i][j] == '*')
+                        //batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 0, 0, 30, 30);
                     if (field[i][j] == 'X')
                         batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 30, 0, 30, 30);
                     if (field[i][j] == 'o')
