@@ -29,6 +29,14 @@ public class GameField {
     private int selCellX;
     private int selCellY;
 
+    public int getSelCellX() {
+        return selCellX;
+    }
+
+    public int getSelCellY() {
+        return selCellY;
+    }
+
     char[][] field;
 
     public GameField(int x, int y) {
@@ -49,7 +57,9 @@ public class GameField {
         batch.draw(fieldTexture, x, y);
 
         if (pl.getFieldType() == "human") {
-
+            /*if(InputHandler.isClicked() && selCellY > -1 && selCellX > -1) {
+                pl.fire(pl.getFieldType());
+            }*/
             for (int i = 0; i < FIELD_SIZE; i++) {
                 for (int j = 0; j < FIELD_SIZE; j++) {
                     if (field[i][j] == '*')
@@ -72,9 +82,12 @@ public class GameField {
                         batch.draw(bloomTexture, 1 + x + j * CELL_SIZE, 1 + y + i * CELL_SIZE, 0, 0, 28, 27);
                 }
             }
-        }
 
-        //pl.fire(pl.getFieldType());
+        }
+        /*if (!pl.isEnemyField()){
+            pl.fire(pl.getFieldType());
+        }*/
+
         if (pl.isEnemyField()){
             if(InputHandler.isClicked() && selCellY > -1 && selCellX > -1) {
                 if(field[selCellY][selCellX] == '*') {

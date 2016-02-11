@@ -16,6 +16,7 @@ public class Human extends Player {
     @Override
     public void fire(String field) {
         super.fire(field);
+
         /*if(InputHandler.isClicked() && field.getSelCellY() > -1 && field.getSelCellX() > -1) {
             if (this.field[field.getSelCellY()][field.getSelCellX()] == '*') {
                 this.field[field.getSelCellY()][field.getSelCellX()] = 'X';
