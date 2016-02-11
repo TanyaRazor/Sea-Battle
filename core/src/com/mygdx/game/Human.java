@@ -8,7 +8,7 @@ import com.badlogic.gdx.utils.reflect.Field;
  */
 public class Human extends Player {
     public Human(){
-        type = "Человек";
+        typeEnemy = "Компьтер";
         fieldType = "human";
         enemyField = false;
     }

@@ -14,16 +14,26 @@ public class Player {
         return fieldType;
     }
 
-    protected String fieldType;
-    char[][] field;
+    public String getTypeEnemy() {
+        return typeEnemy;
+    }
 
-    protected String type;
+    protected String fieldType;
+    //char[][] field;
+
+    protected String typeEnemy;
     public String getType() {
-        return type;
+        return typeEnemy;
     }
 
     public void fire(String field){
+        System.out.println("Ход " + typeEnemy + ".\n");
         //if (!enemyField){
+        /*if(field[selCellY][selCellX] == '*') {
+            field[selCellY][selCellX] = 'X';
+        }else{
+            field[selCellY][selCellX] = 'o';
+        }*/
             System.out.println("Огонь!!!!");
         //}
 

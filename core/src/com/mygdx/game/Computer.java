@@ -5,7 +5,7 @@ package com.mygdx.game;
  */
 public class Computer extends Player {
     public Computer(){
-        type = "Компьютер";
+        typeEnemy = "Человек";
         enemyField = true;
         fieldType = "comp";
     }
@@ -13,5 +13,7 @@ public class Computer extends Player {
     @Override
     public void fire(String field) {
         super.fire(field);
+//        x=MainClass.rand.nextInt(Battleground.FIELD_SIZE);
+//        y=rand.nextInt(Battleground.FIELD_SIZE);
     }
 }

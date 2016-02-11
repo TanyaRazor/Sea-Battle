@@ -12,18 +12,18 @@ public class GameField {
     private static Texture aimTexture;
     private static Texture cellsTexture;
 
-    private GameField plField;
+    //private GameField plField;
 
     private int x;
     private int y;
 
-    public int getSelCellX() {
+    /*public int getSelCellX() {
         return selCellX;
     }
 
     public int getSelCellY() {
         return selCellY;
-    }
+    }*/
 
     private int selCellX;
     private int selCellY;
@@ -46,7 +46,7 @@ public class GameField {
         update();
         batch.draw(fieldTexture, x, y);
 
-        if (pl.getType() == "Человек") {
+        if (pl.getFieldType() == "human") {
 
             for (int i = 0; i < FIELD_SIZE; i++) {
                 for (int j = 0; j < FIELD_SIZE; j++) {
@@ -58,7 +58,7 @@ public class GameField {
                         batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 60, 0, 30, 30);
                 }
             }
-        }else if(pl.getType() == "Компьютер"){
+        }else if(pl.getFieldType() == "comp"){
 
             for (int i = 0; i < FIELD_SIZE; i++) {
                 for (int j = 0; j < FIELD_SIZE; j++) {
@@ -82,7 +82,16 @@ public class GameField {
                 }
                 pl.fire(pl.getFieldType());
             }
-        }
+        }/*else{
+            if(selCellY > -1 && selCellX > -1) {
+                if (field[selCellY][selCellX] == '*') {
+                    field[MainClass.rand.nextInt(selCellY)][MainClass.rand.nextInt(selCellX)] = 'X';
+                } else {
+                    field[selCellY][selCellX] = 'o';
+                }
+                pl.fire(pl.getFieldType());
+            }
+        }*/
 
 
         if(selCellX > -1 && selCellY > -1)
