@@ -69,7 +69,7 @@ public class GameField {
                     if (field[i][j] == 'X')
                         batch.draw(cellsTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, 30, 0, 30, 30);
                     if (field[i][j] == 'o')
-                        batch.draw(bloomTexture, x + j * CELL_SIZE, y + i * CELL_SIZE, -2, -1, 27, 27);
+                        batch.draw(bloomTexture, 1 + x + j * CELL_SIZE, 1 + y + i * CELL_SIZE, 0, 0, 28, 27);
                 }
             }
         }
